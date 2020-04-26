@@ -1,0 +1,57 @@
+<script>
+    const str = "Hello,World";
+    const result = str.indexOf("World");
+    console.log(result);
+    
+    console.log(str.startsWith("Hello"));
+    console.log(str.endsWith("World"));
+    console.log(str.includes("Hello"));
+
+    /*  ESS 객체 */
+    //()();
+ /*   const Obj = (function () {
+        function Obj(_fname, _lname) {
+            this.fname = _fname;
+            this.lname = _lname;
+        }
+        Obj.prototype.fullName = function() {
+            return this.fname+''+this.lname;
+        }
+        return Obj;
+    })();
+    const obj = new Obj ("박","현희");
+    console.log(obj);
+
+    function init() {
+        console.log("hi")
+    }
+    init();
+    (function () {
+        console.log("hello")
+    })();
+    const Obj = (function () {
+        function Obj(_name) {
+            this.name = _name;
+        }
+        return Obj;
+    })();
+    const obj = new Obj ("박현희");
+    console.log(obj);
+    console.log(obj.name)*/
+
+
+
+
+    //6
+    class Obj2 {
+        constructor(_fname,_lname) {
+            this.fname = _fname,
+            this.lname = _lname
+        }
+        fullName() {
+            return `당신의 이름은 ${this.lname} ${this.fname}`;
+        }
+    }
+    const obj2 = new Obj2("현희","박")
+    console.log(obj2,fullName());
+</script>
