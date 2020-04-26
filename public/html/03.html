@@ -7,7 +7,7 @@
     console.log(str.endsWith("World"));
     console.log(str.includes("Hello"));
 
-    /*  ESS 객체 */
+    /*  ES5 객체 */
     //()();
  /*   const Obj = (function () {
         function Obj(_fname, _lname) {
@@ -15,12 +15,15 @@
             this.lname = _lname;
         }
         Obj.prototype.fullName = function() {
-            return this.fname+''+this.lname;
+            return this.fname+" "+this.lname;
         }
         return Obj;
     })();
+   
     const obj = new Obj ("박","현희");
     console.log(obj);
+    console.log(obj.fullName());
+
 
     function init() {
         console.log("hi")
@@ -29,6 +32,7 @@
     (function () {
         console.log("hello")
     })();
+    
     const Obj = (function () {
         function Obj(_name) {
             this.name = _name;
