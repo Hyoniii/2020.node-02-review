@@ -1,0 +1,12 @@
+html
+    head
+        include ../inc/head.pug
+        link(rel="stylesheet" href="\public\css\default.css")
+    body
+        include ../inc/header.pug
+        block banner
+        .d-flex
+            .w-25 
+                block left
+            .w-75
+                block content
